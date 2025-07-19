@@ -1,0 +1,18 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+.gallery-menu {
+    margin-bottom: 20px;
+}
+
+.gallery-menu a {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.gallery-view img {
+    max-width: 100%;
+    height: auto;
+}
