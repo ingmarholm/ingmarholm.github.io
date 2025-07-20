@@ -3,17 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Image Gallery</title>
+    <title>Hourly Plot Viewer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>My Image Gallery 3</h1>
-    <div class="gallery-menu">
-        <!-- Image links will be generated here by JavaScript -->
-    </div>
-    <div class="gallery-view">
-        <img id="main-image" src="" alt="Selected Image">
-    </div>
+    <header>
+        <h1>Hourly Data Plots</h1>
+        <p>New plots are generated every hour. Select a category below.</p>
+    </header>
+
+    <main>
+        <div class="controls">
+            <div class="selector-group">
+                <h3>Group:</h3>
+                <div id="num-selector" class="button-group">
+                    <!-- Number buttons will be generated here -->
+                </div>
+            </div>
+            <div class="selector-group">
+                <h3>Type:</h3>
+                <div id="letter-selector" class="button-group">
+                    <!-- Letter buttons will be generated here -->
+                </div>
+            </div>
+        </div>
+        
+        <div id="image-container">
+            <p id="image-placeholder">Please select a Group and a Type to view a plot.</p>
+            <img id="plot-image" src="" alt="Selected plot">
+        </div>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
